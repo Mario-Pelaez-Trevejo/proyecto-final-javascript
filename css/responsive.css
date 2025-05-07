@@ -1,0 +1,32 @@
+/* Mobile First */
+@media (max-width:480px) {
+	.hide-on-mobile {
+		display: none;
+	}
+}
+
+/* Media query para dispositivos TABLET (mayores a 480px) */
+@media (min-width: 481px) {
+	.hide-on-tablet {
+		display: none;
+	} 
+}
+
+/* Media query para dispositivos DESKTOP (mayores a 1024px) */ 
+@media (min-width: 1024px) {
+	.hide-on-desktop {
+		display: none;
+	}
+
+	.show-on-desktop {
+		display: unset;
+	}
+}
+
+/* Media query para dispositivos DESKTOP XXL (mayores a 1440px) */
+
+@media (min-width: 1440px) {
+	.hide-on-desktop-xxl {
+		display: none;
+	}
+}

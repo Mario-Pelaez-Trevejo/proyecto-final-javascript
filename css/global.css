@@ -1,0 +1,156 @@
+@import url(/css/responsive.css);
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+html, body {
+    font-family: Helvetica, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    width: 100%;
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6,
+p, ul, ol, li,
+figure, figcaption,
+blockquote, dl, dd {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+/*Spacing*/
+
+:root {
+    /* Padding, Margin and Font Size*/
+    --very-very-small: 2px;
+    --very-small: 4px;
+    --small: 8px;
+    --medium: 16px;
+    --big: 24px;
+    --xxl: 32px;
+    --2xxl: 48px;
+    --3xxl: 64px;
+
+    /* Colors */
+    --white: white;
+    --black: black;
+}
+
+
+
+/*Mobile*/
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    padding: var(--small) var(--small) 0 var(--small);
+    margin: 0 auto;
+}
+
+/* SEPARATOR */
+.separator {
+    margin: var(--big);
+    
+    border: 1px solid var(--black);
+}
+
+/*LOGIN BTN TOGGLE*/
+
+#loginBtnContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.login-language-btns-styles {
+    width: 50px;
+    height: 40px;
+    margin-right: var(--very-small);
+    margin-bottom: var(--very-very-small);
+    
+    border: 1px solid black;
+    border-radius: var(--small);
+    background-color: var(--white);
+    color: var(--black);
+}
+
+
+
+/*LOGIN CONTAINER*/
+.login-container {
+    display: none;
+    text-align: center;
+    max-width: 200px;
+    margin-right: var(--very-small);
+
+    border: 1px solid var(--black);
+    border-radius: var(--small);
+
+    padding: var(--small);
+}
+
+.login-container h2 {
+    font-size: var(--medium);
+
+    padding-bottom: var(--small);
+}
+
+.login-container input {
+    border: 1px solid var(--black);
+    border-radius: var(--very-small);
+}
+
+.login-container input::placeholder{
+    color: black;
+}
+
+.login-submit-btn-container {
+    padding-top: var(--very-small);
+}
+
+.login-submit-btn {
+    border: 1px solid black;
+    border-radius: var(--very-small);
+    background-color: var(--white);
+    color: var(--black);
+}
+
+  /*MAIN LOGO*/
+
+.main-logo-container {
+    width: 50px;
+}
+
+.main-logo-container img {
+    width: 100%;
+}
+
+.main-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    margin: 0 auto;
+}
+
+.main-section-btns {
+    border: none;
+    border-radius: var(--small);
+    width: 150px;
+    height: 170px;
+    margin: var(--small);
+}
