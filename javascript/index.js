@@ -11,8 +11,7 @@ const submitBtn = document.getElementById('submitBtn');
 // console.log(loginForm);
 // console.log(loginBtnContainer);
 // console.log(submitBtn);
-
-// MUESTRA Y OCULTA EL LOGIN Y CAMBIA LA DISPOSICIÓN DE LOS BOTONES.
+//-----------------------------------------MUESTRA Y OCULTA EL LOGIN Y CAMBIA LA DISPOSICIÓN DE LOS BOTONES------------------------------------------//
 loginBtn.addEventListener('click', () => {
     loginForm.style.display = loginForm.style.display === 'block' ? 'none' : 'block';
     if(loginForm.style.display !== 'none'){
@@ -22,13 +21,13 @@ loginBtn.addEventListener('click', () => {
     }
 });
 
-submitBtn.addEventListener('submit', () => {
-    const user = userInput;
-    const pass = passInput;
+// submitBtn.addEventListener('submit', () => {
+//     const user = userInput;
+//     const pass = passInput;
 
-    if(user === "mario" && pass === "1234"){
-        alert('Login exitoso!')
-    }else{
-        alert('Login fallido!')
-    }
-});
+//     if(user === "mario" && pass === "1234"){
+//         alert('Login exitoso!')
+//     }else{
+//         alert('Login fallido!')
+//     }
+// });

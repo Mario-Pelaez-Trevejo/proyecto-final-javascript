@@ -45,7 +45,7 @@ a {
     text-decoration: none;
 }
 
-/*Spacing*/
+/*------------------------------------- Spacing -------------------------------------*/
 
 :root {
     /* Padding, Margin and Font Size*/
@@ -65,25 +65,21 @@ a {
 
 
 
-/*Mobile*/
+/*------------------------------------- Mobile -------------------------------------*/
 
 .nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
 
-    padding: var(--small) var(--small) 0 var(--small);
+    padding: var(--small) var(--small) var(--medium) var(--small);
     margin: 0 auto;
+    background-color: #222;
+
+    border-bottom: 1px solid #444;
 }
 
-/* SEPARATOR */
-.separator {
-    margin: var(--big);
-
-    border: 1px solid var(--black);
-}
-
-/*LOGIN BTN TOGGLE*/
+/*------------------------------------- LOGIN BTN TOGGLE -------------------------------------*/
 
 #loginBtnContainer {
     display: flex;
@@ -104,7 +100,7 @@ a {
 
 
 
-/*LOGIN CONTAINER*/
+/*------------------------------------- LOGIN CONTAINER -------------------------------------*/
 .login-container {
     display: none;
     text-align: center;
@@ -143,7 +139,7 @@ a {
     color: var(--black);
 }
 
-/*MAIN LOGO*/
+/*------------------------------------- MAIN LOGO -------------------------------------*/
 
 .main-logo-container {
     width: 50px;
@@ -151,6 +147,7 @@ a {
 
 .main-logo-container img {
     width: 100%;
+    border-radius: var(--xxl);
 }
 
 .main-section {
@@ -159,6 +156,9 @@ a {
     justify-content: center;
 
     margin: 0 auto;
+    padding: var(--medium) 0 var(--medium) 0;
+
+    background-color: #222;
 }
 
 .main-section-supermarket {
@@ -173,7 +173,7 @@ a {
     margin: var(--small);
 }
 
-/* LOGOS DE LOS SUPERMERCADOS */
+/*------------------------------------- LOGOS DE LOS SUPERMERCADOS -------------------------------------*/
 
 #carrefour {
     background-image: url(/images/logos/carrefour-logo.png);
@@ -215,6 +215,8 @@ a {
     background-position: center;
     background-repeat: no-repeat;
 }
+
+/*------------------------------------- FOOTER -------------------------------------*/
 
 .footer-main-container {
     padding: 30px 20px;
@@ -269,7 +271,7 @@ a {
 
 .footer-rigths-box {
     text-align:center; 
-    
+
     margin-top:30px; 
     border-top:1px solid #444; 
     padding-top:15px; font-size:14px; 
