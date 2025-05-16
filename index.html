@@ -1,53 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Productos Sin Gluten</title>
-        <script src="javascript/index.js" defer></script>
-        <link rel="stylesheet" href="css/index.css">
-      </head>
-      <body>
-      
-        <!-- Navegación superior -->
-        <nav class="nav">
-          <div class="main-logo-container">
-            <img src="/images/logos/main-logo.png" alt="Page logo">
-          </div>
 
-          
-          <div>
-            <label for="desktop-products-list" class="hide-on-mobile">Lista</label>
-            <select id="desktop-products-list" class="hide-on-mobile">
-              
-            </select>
-            <div id="loginBtnContainer">
-              <button class="login-language-btns-styles" id="loginToggle">Login</button>
-              <button class="login-language-btns-styles">Idioma</button>
-            </div>
-          </div>
-          <div class="login-container" id="loginForm">
-            <h2>Iniciar Sesión</h2>
-            <form>
-              <input type="text" placeholder="Usuario" id="username" required>
-              <input type="password" placeholder="Contraseña" id="password" required>
-              <div class="login-submit-btn-container">
-                <button type="submit" id="submitBtn">Entrar</button>
-              </div>
-            </form>
-          </div>
-        </nav>
-        
-        <div class="separator"></div>
-        <!-- Secciones principales -->
-        <section class="main-section">
-          <a href="html/carrefour.html"><button class="main-section-btns">Carrefour</button></a>
-          <a href="html/mercadona.html"><button class="main-section-btns">Mercadona</button></a>
-          <a href="html/dialprix.html"><button class="main-section-btns">Dialprix</button></a>
-          <a href="html/dia.html"><button class="main-section-btns">Dia</button></a>
-          <a href="html/products.html"><button class="main-section-btns">Productos</button></a>
-          <a href="html/your-products-list.html"><button class="main-section-btns">Lista de la compra</button></a>
-        </section>
-        <footer>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Productos Sin Gluten</title>
+  <script src="javascript/index.js" defer></script>
+  <link rel="stylesheet" href="css/index.css">
+</head>
 
-        </footer>
+<body>
+
+  <!-- Nav -->
+  <nav class="nav">
+    <div class="main-logo-container">
+      <img src="/images/logos/main-logo.png" alt="Page logo">
+    </div>
+
+
+    <div>
+      <label for="desktop-products-list" class="hide-on-mobile">Lista</label>
+      <select id="desktop-products-list" class="hide-on-mobile">
+
+      </select>
+      <div id="loginBtnContainer">
+        <button class="login-language-btns-styles" id="loginToggle">Login</button>
+        <button class="login-language-btns-styles">Idioma</button>
+      </div>
+    </div>
+    <div class="login-container" id="loginForm">
+      <h2>Iniciar Sesión</h2>
+      <form>
+        <input type="text" placeholder="Usuario" id="username" required>
+        <input type="password" placeholder="Contraseña" id="password" required>
+        <div class="login-submit-btn-container">
+          <button type="submit" id="submitBtn">Entrar</button>
+        </div>
+      </form>
+    </div>
+  </nav>
+
+  <div class="separator"></div>
+  <!-- Secciones principales -->
+  <section class="main-section">
+    <a href="html/carrefour.html">
+      <div class="main-section-supermarket" id="carrefour"></div>
+    </a>
+    <a href="html/mercadona.html">
+      <div class="main-section-supermarket" id="mercadona"></div>
+    </a>
+    <a href="html/dialprix.html">
+      <div class="main-section-supermarket" id="dialprix"></div>
+    </a>
+    <a href="html/dia.html">
+      <div class="main-section-supermarket" id="dia"></div>
+    </a>
+    <a href="html/products.html">
+      <div class="main-section-supermarket" id="products">Productos</div>
+    </a>
+    <a href="html/your-products-list.html">
+      <div class="main-section-supermarket" id="products-list"></div>
+    </a>
+  </section>
+  <footer class="footer-main-container">
+    <div class="footer-positioning-container">
+
+      <!-- Sección: Acerca de -->
+      <div class="footer-sections-container" >
+        <h3>🛒 SuperComparador</h3>
+        <p>Compara precios de miles de productos en los principales supermercados. Ahorra tiempo y dinero cada semana.
+        </p>
+      </div>
+
+      <!-- Sección: Enlaces útiles -->
+      <div class="footer-sections-container">
+        <h4>Enlaces</h4>
+        <ul>
+          <li><a href="#productos">Ver productos</a></li>
+          <li><a href="#ofertas">Ofertas</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+          <li><a href="#nosotros">Sobre nosotros</a></li>
+        </ul>
+      </div>
+
+      <!-- Sección: Contacto / Redes -->
+      <div class="footer-sections-container">
+        <h4>Contáctanos</h4>
+        <p>Email: contacto@supercomparador.com</p>
+        <p>Tel: +34 123 456 789</p>
+        <div style="margin-top:10px;">
+          <a href="#" style="color:#ccc; margin-right:10px;">Instagram</a>
+          <a href="#" style="color:#ccc; margin-right:10px;">Facebook</a>
+          <a href="#" style="color:#ccc;">Twitter</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div
+      style="text-align:center; margin-top:30px; border-top:1px solid #444; padding-top:15px; font-size:14px; color:#aaa;">
+      © 2025 SuperComparador - Todos los derechos reservados.
+    </div>
+  </footer>

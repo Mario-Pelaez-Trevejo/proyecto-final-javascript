@@ -1,6 +1,8 @@
 @import url(/css/responsive.css);
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
 }
 
@@ -8,16 +10,28 @@ html {
     scroll-behavior: smooth;
 }
 
-html, body {
+html,
+body {
     font-family: Helvetica, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     width: 100%;
     margin: 0;
 }
 
-h1, h2, h3, h4, h5, h6,
-p, ul, ol, li,
-figure, figcaption,
-blockquote, dl, dd {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
     margin: 0;
     padding: 0;
 }
@@ -27,8 +41,8 @@ ul {
 }
 
 a {
-	color: inherit;
-	text-decoration: none;
+    color: inherit;
+    text-decoration: none;
 }
 
 /*Spacing*/
@@ -57,7 +71,7 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+
     padding: var(--small) var(--small) 0 var(--small);
     margin: 0 auto;
 }
@@ -65,7 +79,7 @@ a {
 /* SEPARATOR */
 .separator {
     margin: var(--big);
-    
+
     border: 1px solid var(--black);
 }
 
@@ -81,7 +95,7 @@ a {
     height: 40px;
     margin-right: var(--very-small);
     margin-bottom: var(--very-very-small);
-    
+
     border: 1px solid black;
     border-radius: var(--small);
     background-color: var(--white);
@@ -114,7 +128,7 @@ a {
     border-radius: var(--very-small);
 }
 
-.login-container input::placeholder{
+.login-container input::placeholder {
     color: black;
 }
 
@@ -129,7 +143,7 @@ a {
     color: var(--black);
 }
 
-  /*MAIN LOGO*/
+/*MAIN LOGO*/
 
 .main-logo-container {
     width: 50px;
@@ -147,10 +161,99 @@ a {
     margin: 0 auto;
 }
 
-.main-section-btns {
-    border: none;
-    border-radius: var(--small);
+.main-section-supermarket {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid black;
+    border-radius: var(--2xxl);
     width: 150px;
     height: 170px;
     margin: var(--small);
+}
+
+/* LOGOS DE LOS SUPERMERCADOS */
+
+#carrefour {
+    background-image: url(/images/logos/carrefour-logo.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#mercadona {
+    background-image: url(/images/logos/mercadona-logo.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#dialprix {
+    background-image: url(/images/logos/dialprix-logo.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#dia {
+    background-image: url(/images/logos/dia-logo.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#products {
+    background-image: url(/images/logos/mercadona-logo.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#products-list {
+    background-image: url(/images/logos/products-list-logo.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.footer-main-container {
+    padding: 30px 20px;
+
+    background-color: #222;
+    color: white;
+
+
+    font-family: sans-serif;
+}
+
+.footer-positioning-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    max-width: 1200px;
+
+    margin: auto;
+
+    gap: 20px;
+}
+
+.footer-sections-container {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-sections-container h3 {
+    margin-bottom:10px;
+}
+
+.footer-sections-container ul {
+    list-style:none; 
+    padding:0; 
+    margin:0;
+}
+
+.footer-sections-container ul li a {
+    color:#ccc; 
+    text-decoration:none;
 }
