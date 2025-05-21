@@ -1,11 +1,13 @@
+import { getFoods } from "./data.js";
+
 //VARIABLES PARA UTILIZAR EN EL EVENTO DE 
 const loginBtn = document.getElementById('loginToggle');
 const loginForm = document.getElementById('loginForm');
 const loginBtnContainer = document.getElementById('loginBtnContainer');
 
-const userInput = document.getElementById('username');
-const passInput = document.getElementById('password');
-const submitBtn = document.getElementById('submitBtn');
+// const userInput = document.getElementById('username');
+// const passInput = document.getElementById('password');
+// const submitBtn = document.getElementById('submitBtn');
 
 // console.log(loginBtn);
 // console.log(loginForm);
@@ -14,9 +16,9 @@ const submitBtn = document.getElementById('submitBtn');
 //-----------------------------------------MUESTRA Y OCULTA EL LOGIN Y CAMBIA LA DISPOSICIÓN DE LOS BOTONES------------------------------------------//
 loginBtn.addEventListener('click', () => {
     loginForm.style.display = loginForm.style.display === 'block' ? 'none' : 'block';
-    if(loginForm.style.display !== 'none'){
+    if (loginForm.style.display !== 'none') {
         loginBtnContainer.style.flexDirection = loginBtnContainer.style.flexDirection === 'column' ? 'row' : 'column';
-    }else{
+    } else {
         loginBtnContainer.style.flexDirection = loginBtnContainer.style.flexDirection === 'row' ? 'column' : 'row';
     }
 });
@@ -31,3 +33,9 @@ loginBtn.addEventListener('click', () => {
 //         alert('Login fallido!')
 //     }
 // });
+
+
+document.addEventListener("DOMContentLoaded", async () => {
+    const foods = await getFoods();
+    console.log(foods);
+});
