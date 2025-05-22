@@ -63,7 +63,9 @@ a {
     --black: black;
 }
 
+/*-------------------------------------HIDDEN-------------------------------------*/
 
+.hidden {display: none;}
 
 /*------------------------------------- Mobile -------------------------------------*/
 
@@ -344,6 +346,23 @@ a {
 }
 
 .food-supermarket {
-    align-self: flex-end;
+    flex: 1;
+    align-self: flex-start;
     color: var(--white);
+}
+
+.add-list-button {
+    flex: 1;
+
+    width: 50px;
+    
+    font-size: var(--big);
+    align-self: center;
+    text-align: center;
+
+    color: white;
+
+
+    border: 1px solid white;
+    border-radius: var(--medium);
 }
