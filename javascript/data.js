@@ -26,5 +26,11 @@ const randomMarketAssign = (foods) => {
         obj.supermarket = supermarkets[randomIndex];
     });
 
+    const getRandomPrice = () => parseFloat((Math.random() * 3 + 1).toFixed(2));
+    foods.forEach(food => {
+        food.price = getRandomPrice();
+    });
+
     return foods;
-}
+};
+

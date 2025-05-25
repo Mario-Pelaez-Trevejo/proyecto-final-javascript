@@ -1,6 +1,49 @@
 <!-- Lista de la compra desplegable -->
-<div class="products-list">
-    <h2>Lista</h2>
-    
-    <div><strong>Precio total:</strong> €XX.XX</div>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="/javascript/renderFoods.js" defer type="module"></script>
+  <script src="/javascript/products-list.js" defer></script>
+  <link rel="stylesheet" href="/css/index.css">
+  <title>Your product list</title>
+</head>
+
+<body>
+  <nav class="nav">
+    <a href="/index.html">
+      <div class="main-logo-container">
+        <img src="/images/logos/main-logo.png" alt="Page logo">
+      </div>
+    </a>
+
+
+    <div>
+      <label for="desktop-products-list" class="hide-on-mobile">Lista</label>
+      <select id="desktop-products-list" class="hide-on-mobile">
+
+      </select>
+      <div id="loginBtnContainer">
+        <button class="login-language-btns-styles" id="loginToggle">Login</button>
+        <button class="login-language-btns-styles">Idioma</button>
+      </div>
+    </div>
+    <div class="login-container" id="loginForm">
+      <h2>Iniciar Sesión</h2>
+      <form>
+        <input type="text" placeholder="Usuario" id="username" required>
+        <input type="password" placeholder="Contraseña" id="password" required>
+        <div class="login-submit-btn-container">
+          <button type="submit" id="submitBtn">Entrar</button>
+        </div>
+      </form>
+    </div>
+  </nav>
+  <div class="list-container" id="listContainer">
+    <h1>Lista</h1>
   </div>
+</body>
+
+</html>

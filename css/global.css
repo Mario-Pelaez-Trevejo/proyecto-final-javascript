@@ -320,6 +320,57 @@ a {
     background-color: #222;
 }
 
+/*-------------------------------------LIST STYLES-------------------------------------*/
+
+.list-container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    
+    background-color: #222;
+    color: var(--white);
+}
+
+.list-container h1 {
+    padding: var(--medium) 0 var(--medium) 0;
+}
+
+.list-product {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    width: 300px;
+
+
+    margin: var(--small) auto;
+    padding: var(--small);
+
+    border: 1px solid var(--white);
+    border-radius: var(--medium);
+}
+
+.list-product h3 {
+    font-size: var(--medium);
+
+    padding-bottom: var(--small);
+}
+
+.list-product p {
+    font-size: 14px;
+    
+    padding-bottom: var(--small);
+}
+
+.list-product button {
+    background-color: #222;
+    color: var(--white);
+
+    border: none;
+}
+
+
 /*-------------------------------------JAVASCRIPT STYLES-------------------------------------*/
 
 .product {
@@ -350,6 +401,8 @@ a {
     align-self: flex-start;
     color: var(--white);
 }
+
+
 
 .add-list-button {
     flex: 1;
