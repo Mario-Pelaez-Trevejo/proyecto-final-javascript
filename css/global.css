@@ -152,6 +152,8 @@ a {
     border-radius: var(--xxl);
 }
 
+/*------------------------------------- MAIN SECTION SUPERMARKET -------------------------------------*/
+
 .main-section {
     display: flex;
     flex-wrap: wrap;
@@ -205,7 +207,7 @@ a {
 }
 
 #products {
-    background-image: url(/images/logos/mercadona-logo.jpg);
+    background-image: url(/images/logos/products-logo.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -357,7 +359,7 @@ a {
     padding-bottom: var(--small);
 }
 
-.list-product p {
+.list-product span {
     font-size: 14px;
     
     padding-bottom: var(--small);
@@ -394,19 +396,28 @@ a {
     flex: 1;
     color: var(--white);
     font-size: var(--medium);
+    align-self: center;
 }
 
 .food-supermarket {
-    flex: 1;
     align-self: flex-start;
     color: var(--white);
 }
 
+.food-price {
+    color: var(--white);
+}
+
+.supermarket-price-js-container {
+    display: flex;
+    flex: 1;
+
+    justify-content: space-between;
+}
 
 
 .add-list-button {
     flex: 1;
-
     width: 50px;
     
     font-size: var(--big);

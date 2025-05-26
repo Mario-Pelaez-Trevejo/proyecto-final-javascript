@@ -4,7 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="/javascript/index.js" defer></script>
+  <script src="/javascript/index.js" defer type="module"></script>
+  <script src="/javascript/renderFoods.js" defer></script>
   <link rel="stylesheet" href="/css/index.css">
   <title>Document</title>
 </head>
@@ -40,8 +41,9 @@
     </div>
   </nav>
 
-  <section class="main-section">
-
+  <section class="supermarket-section">
+    <div class="supermarket-banners-container"><img src="/images/banners/products-banner.jpg" alt="free gluten products banner"></div>
+    <div class="products-container" id="allProductsContainer"></div>
   </section>
 </body>
 

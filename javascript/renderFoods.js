@@ -1,11 +1,12 @@
 document.addEventListener("DOMContentLoaded", () => {
     //-----------------------------------------CONTENEDOR DE LOS SUPERMERCADOS EN GENERAL (PAGINA DE HTML)-----------------------------------------// 
-    const supermarketContainer = document.getElementById("supermarket")
+    const supermarketContainer = document.getElementsByClassName("products-container");
 
     const carrefour = document.getElementById('carrefour-supermarket');
     const mercadona = document.getElementById('mercadona-supermarket');
     const dialprix = document.getElementById('dialprix-supermarket');
     const dia = document.getElementById('dia-supermarket');
+    const allProducts = document.getElementById('allProductsContainer')
 
     // console.log("carrefour:", carrefour);
     // console.log("mercadona:", mercadona);
@@ -24,12 +25,13 @@ document.addEventListener("DOMContentLoaded", () => {
     <div style="background:#fff; padding:20px; border-radius:8px; max-width:400px; width:80%;">
       <h2 style="display:flex; justify-self:center;" id="box-title" style="margin-top:0;"></h2>
       <p style="padding:8px 0 8px 0;" id="box-body"></p>
-      <div>
+      <div style="display:flex; justify-content:space-between; align-content:center;">
         <span style="display:flex; justify-self:flex-start;" id="box-supermarket"></span>
         <span style="display:flex; justify-self:flex-end;" id="box-price"></span>
       </div>
       <button style="display:flex; justify-self:center; border:none; border-radius:4px;" id="box-close">Cerrar</button>
-    </div>
+      </div>
+      
   `;
     document.body.appendChild(box);
 
@@ -48,19 +50,21 @@ document.addEventListener("DOMContentLoaded", () => {
             item.classList.add("product");
             item.innerHTML = `
       <h3 class="food-name">${food.description.slice(0, 20)}</h3>
+      <div class="supermarket-price-js-container">
       <span class="food-supermarket">${food.supermarket.toUpperCase()}</span>
-      <span class="box-price">${food.price}</span>
+      <span class="food-price">${food.price} €</span>
+      </div>
       <div class="add-list-button">+</div>
 
     `;
-    console.log("Precio: " + food.price, typeof food.price);
+    // console.log("Precio: " + food.price, typeof food.price);
     
             item.style.cursor = "pointer";
             item.onclick = () => {
                 document.getElementById("box-title").textContent = food.description.slice(0, 20);
                 document.getElementById("box-body").textContent = food.foodNutrients.map(i => i.name).join(", ");
                 document.getElementById("box-supermarket").textContent = food.supermarket.toUpperCase();
-                document.getElementById("box-price").textContent = food.price;
+                document.getElementById("box-price").textContent = food.price + " €";
                 box.style.display = "flex";
             };
 
@@ -89,9 +93,13 @@ document.addEventListener("DOMContentLoaded", () => {
             } if (food.supermarket === "dia") {
                 dia?.append(item);
                 // console.log(item);
+            }if(food.supermarket) {
+                allProducts?.append(item);
             }
 
         });
     };
+
+    
 });
 

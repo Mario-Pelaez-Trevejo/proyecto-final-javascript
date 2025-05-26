@@ -1,4 +1,4 @@
-import { getFoods } from "./data.js";
+import { getFoods} from "./data.js";
 
 //VARIABLES PARA UTILIZAR EN EL EVENTO DE 
 const loginBtn = document.getElementById('loginToggle');

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="/javascript/index.js" type="module" defer></script>
     <script src="/javascript/renderFoods.js" defer></script>
+    <script src="/javascript/products-list.js" defer></script>
     <link rel="stylesheet" href="/css/index.css">
     <title>Dialprix</title>
 </head>
@@ -24,20 +25,10 @@
             <select id="desktop-products-list" class="hide-on-mobile">
 
             </select>
-            <div id="loginBtnContainer">
-                <button class="login-language-btns-styles" id="loginToggle">Login</button>
-                <button class="login-language-btns-styles">Idioma</button>
+            <div>
+                <button id="toggleListBtn">Mostrar lista</button>
+                <div id="listContainer" style="display: none;"></div>
             </div>
-        </div>
-        <div class="login-container" id="loginForm">
-            <h2>Iniciar Sesión</h2>
-            <form>
-                <input type="text" placeholder="Usuario" id="username" required>
-                <input type="password" placeholder="Contraseña" id="password" required>
-                <div class="login-submit-btn-container">
-                    <button type="submit" id="submitBtn">Entrar</button>
-                </div>
-            </form>
         </div>
     </nav>
 
@@ -47,7 +38,7 @@
         </div>
 
         <div class="products-container" id="dialprix-supermarket"></div>
-        
+
     </section>
 </body>
 
